@@ -147,7 +147,7 @@ main {
     background-color: black;
 }
 
-/* ! Section Quote */
+/* ! Section Quote/Resources/Git/Commands */
 
 .quote,
 .git,
@@ -180,6 +180,10 @@ code {
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+.commands img {
+    width: 75%;
 }
 
 /* ! ############################# Section Image ################ */
