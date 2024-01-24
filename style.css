@@ -182,6 +182,18 @@ code {
     gap: 1em;
 }
 
+/* ! ############################# Section Image ################ */
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    width: 15%;
+    margin: auto;
+}
+
 /* ! ############################### Footer ################### */
 
 footer {
