@@ -1,0 +1,196 @@
+/* ! ######################### General Styling ############################ */
+
+@font-face {
+    font-family: OpenSans;
+    src: url(./assets/fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: LucidaSansTypeWriter;
+    src: url(./assets/fonts/LucidaSansTypewriterRegular/Lucida-Sans-Typewriter-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* font-size: 62.5%; */
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.582);
+}
+
+a:hover {
+    transition: 0.1s;
+    color: white;
+}
+
+code,
+pre {
+}
+
+pre {
+    font-family: LucidaSansTypeWriter;
+    background-color: rgba(207, 197, 197, 0.726);
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: left;
+}
+span {
+    background-color: rgba(207, 197, 197, 0.726);
+    font-family: LucidaSansTypeWriter;
+    font-size: 2rem;
+    font-weight: 300;
+}
+/* ! ############################ Fontsize/Clamp ########################### */
+
+h1 {
+    font-size: clamp(5rem, 5vw, 7rem);
+}
+h2 {
+    font-size: clamp(3rem, 4vw, 4.8rem);
+}
+h3 {
+    font-size: clamp(2.5rem, 3.3vw, 4rem);
+}
+h4 {
+    font-size: clamp(2.8rem, 3.2vw, 3.8rem);
+}
+h5 {
+    font-size: clamp(2.5rem, 3vw, 3.2rem);
+}
+h6 {
+    font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+}
+p,
+label {
+    font-size: clamp(2rem, 2vw, 3rem);
+}
+a,
+li {
+    font-size: clamp(2rem, 2vw, 2rem);
+}
+
+.wrapper {
+    background-color: black;
+}
+
+/* ! ########################### Header ##################################### */
+
+header {
+    background-image: url(./assets/img/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    min-height: 100vh;
+    margin-bottom: 8vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+nav div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav img {
+    padding-right: 1rem;
+    width: 80px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+    background-color: rgba(207, 197, 197, 0.726);
+    padding: 5rem;
+    border-radius: 15px;
+    margin-bottom: 5vw;
+}
+
+blockquote {
+    text-align: center;
+}
+
+.infoBox blockquote p {
+    margin-bottom: 2rem;
+}
+
+/* ! Main */
+
+main {
+    background-color: black;
+}
+
+/* ! Section Quote */
+
+.quote,
+.git,
+.resources,
+.commands {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.git h2,
+.resources h2 {
+    margin-bottom: 2vw;
+}
+
+.git div,
+.resources div,
+.commands div {
+    text-align: center;
+    min-width: 40%;
+    margin-bottom: 4vw;
+}
+
+code {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* ! ############################### Footer ################### */
+
+footer {
+    padding: 2vw;
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer p:nth-of-type(2),
+footer a {
+    font-size: 1rem;
+}

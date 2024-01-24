@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Git Cheat Sheet</title>
+    </head>
+    <div class="wrapper">
+        <body>
+            <header>
+                <nav>
+                    <div class="logo">
+                        <a href="https://github.com"
+                            ><img
+                                src="./assets/img/GitHub_Logo_White.png"
+                                alt="github logo"
+                        /></a>
+                    </div>
+                    <div>
+                        <img src="./assets/img/github-mark-white.png" alt="" />
+                        <a href="https://github.com/MichaelGee76">myGitHub</a>
+                    </div>
+                </nav>
+                <h1>Git Cheat Sheet</h1>
+            </header>
+
+            <main>
+                <section class="quote">
+                    <div class="infoBox">
+                        <h5>
+                            <blockquote>
+                                <p>
+                                    “I don't need to know everything, I just
+                                    need to know where to find it, when I need
+                                    it.”
+                                </p>
+                                <footer>-Albert Einstein</footer>
+                            </blockquote>
+                        </h5>
+                    </div>
+                </section>
+                <section class="git">
+                    <h2>What is Git and Why I should use it.</h2>
+                    <p>Git is actually a memory card for your code</p>
+                    <div>
+                        <p>
+                            It is a "must have skill" for nowadays developers.
+                            Start deep diving into it whith
+                            <a
+                                href="https://www.nobledesktop.com/learn/git/what-is-git"
+                                >this article</a
+                            >
+                            by
+                            <a href="www.nobledesktop.com"
+                                >www.nobledesktop.com</a
+                            >
+                        </p>
+                    </div>
+                </section>
+                <section class="resources">
+                    <h2>The one book you should read about Git</h2>
+                    <div>
+                        <p>
+                            visit
+                            <a href="https://git-scm.com/book/en/v2"
+                                >https://git-scm.com</a
+                            >
+                            and read online or download a copy to your computer.
+                        </p>
+                    </div>
+                </section>
+                <section class="commands">
+                    <div>
+                        <code>
+                            <h3>Open command line</h3>
+                            <p>Change your directory to:</p>
+                            <pre>cd C:/Users/user/my_project</pre>
+                            <p>To create a new repository, type:</p>
+                            <pre>git init</pre>
+                            <p>
+                                A subdirectory named <span>.git</span> will be
+                                created.
+                            </p>
+                            <p>
+                                If you want to start version-controlling
+                                existing files:
+                            </p>
+                            <pre>
+git add *.c
+git add LICENSE
+git commit -m 'Initial project version'</pre
+                            >
+                            <p>
+                                If you want to clone an existing repository,
+                                type:
+                            </p>
+                            <pre>
+git clone https://github.com/yourusername/repositoryname</pre
+                            >
+                            <p>View the commit history</p>
+                            <pre>git log</pre>
+                            <p>Ammend commits</p>
+                            <pre>git commit --amend</pre>
+                            <p>Unstage a staged file</p>
+                            <pre>git reset (commit id)</pre>
+                            <p>Git branching</p>
+                            <p>Create a new branch</p>
+                            <pre>git branch (name)</pre>
+                            <p>Switch to new branch</p>
+                            <pre>git checkout -b (newBranch)</pre>
+                            <p>This is a shorthand for:</p>
+                            <pre>
+git branch (newBranch)
+git checkout (newBranch)
+                            </pre>
+                            <p>Switch back to main branch</p>
+                            <pre>git checkout main</pre>
+                            <p>Merge branch into main</p>
+                            <p>First checkout to your main branch, then:</p>
+                            <pre>git merge (newBranch)</pre>
+                        </code>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div>
+                    <p>&COPY; by Michael Gee 2024</p>
+                    <p>
+                        Foto von
+                        <a
+                            href="https://unsplash.com/de/@goshua13?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                            >Joshua Aragon</a
+                        >
+                    </p>
+                </div>
+            </footer>
+        </body>
+    </div>
+</html>
