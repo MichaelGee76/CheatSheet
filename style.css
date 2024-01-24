@@ -197,3 +197,19 @@ footer p:nth-of-type(2),
 footer a {
     font-size: 1rem;
 }
+
+@media only screen and (max-width: 1024px) {
+    .quote {
+        width: 100vw;
+    }
+    .infoBox {
+        min-width: 90vw;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    nav {
+        flex-direction: column;
+    }
+}
