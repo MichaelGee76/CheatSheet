@@ -35,17 +35,16 @@ a:hover {
     color: white;
 }
 
-code,
-pre {
-}
-
 pre {
     font-family: LucidaSansTypeWriter;
     background-color: rgba(207, 197, 197, 0.726);
-    padding: 2rem;
-    font-size: 2rem;
+    padding: 1.5rem;
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
     font-weight: 300;
     text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
 }
 span {
     background-color: rgba(207, 197, 197, 0.726);
@@ -162,6 +161,7 @@ main {
 
 .git h2,
 .resources h2 {
+    text-align: center;
     margin-bottom: 2vw;
 }
 
@@ -169,10 +169,13 @@ main {
 .resources div,
 .commands div {
     text-align: center;
-    min-width: 40%;
+    max-width: 80%;
     margin-bottom: 4vw;
 }
 
+.git p {
+    text-align: center;
+}
 code {
     display: flex;
     flex-direction: column;
